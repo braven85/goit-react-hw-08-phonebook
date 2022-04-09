@@ -21,6 +21,7 @@ export const usersSlice = createSlice({
       const { token, user } = action.payload;
       state.token = token;
       state.userData = user;
+      state.isLoggedIn = true;
       state.loading = false;
     },
     [loginUser.pending]: (state) => {

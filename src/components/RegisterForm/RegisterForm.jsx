@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
-import { useDispatch } from "react-redux";
+import React, { useEffect, useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useLocation, useNavigate } from "react-router-dom";
 import { signupUser } from "../../services/api";
 import classes from "./RegisterForm.module.css";
 
@@ -8,6 +9,16 @@ const RegisterForm = () => {
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
   const dispatch = useDispatch();
+  const { token } = useSelector((state) => state.users);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (token) {
+      const origin = location.state?.from?.pathname || "/contacts";
+      return navigate(origin);
+    }
+  }, [token, location.state?.from?.pathname, navigate]);
 
   const submitHandler = (event) => {
     event.preventDefault();
