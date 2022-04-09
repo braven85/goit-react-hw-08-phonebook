@@ -1,4 +1,4 @@
-a {
+.repo-link {
   text-decoration: none;
   color: #000000;
   font-size: 30px;
@@ -7,6 +7,6 @@ a {
   margin-bottom: 7px;
 }
 
-a:hover {
+.repo-link:hover {
   color: #0000ff;
 }

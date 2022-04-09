@@ -12,7 +12,7 @@ const UserMenu = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchContacts(token));
-  }, []);
+  }, [dispatch, token]);
 
   return (
     <section className={classes["user-menu-container"]}>

@@ -19,7 +19,7 @@ const LoginForm = () => {
       const origin = location.state?.from?.pathname || "/contacts";
       return navigate(origin);
     }
-  }, [token]);
+  }, [token, location.state?.from?.pathname, navigate]);
 
   const submitHandler = (event) => {
     event.preventDefault();

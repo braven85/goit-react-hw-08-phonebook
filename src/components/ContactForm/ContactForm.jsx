@@ -17,7 +17,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    const { name, number } = e.target;
+    const { name } = e.target;
     for (let contact of contactsList) {
       if (contact.name === name.value) {
         alert(`${name.value} is already on the contacts list`);
