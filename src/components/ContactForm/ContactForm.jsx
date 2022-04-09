@@ -32,7 +32,7 @@ const ContactForm = () => {
       number: enteredNumber,
     };
 
-    dispatch(addContact(token, userData));
+    dispatch(addContact({ token, userData }));
     form.reset();
   };
 

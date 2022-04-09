@@ -6,6 +6,7 @@ import HomePage from "./pages/Home/HomePage";
 import LoginPage from "./pages/Login/LoginPage";
 import RegisterPage from "./pages/Register/RegisterPage";
 import PrivateRoute from "./routes/PrivateRoute";
+import "./App.css";
 
 const App = () => {
   return (
@@ -26,7 +27,7 @@ const App = () => {
           }
         />
 
-        <Route path="*" element={<p>There's nothing here: 404!</p>} />
+        <Route path="*" element={<h1 className="wrong-address">There's nothing here: 404!</h1>} />
       </Routes>
     </Layout>
   );

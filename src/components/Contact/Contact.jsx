@@ -13,7 +13,7 @@ export const Contact = ({ id, name, number }) => {
       <button
         className={styles.Contact__button}
         type="button"
-        onClick={() => dispatch(deleteContact(token, id))}
+        onClick={() => dispatch(deleteContact({ token, id }))}
       >
         Remove
       </button>

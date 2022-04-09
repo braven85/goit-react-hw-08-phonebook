@@ -56,8 +56,7 @@ export const fetchContacts = createAsyncThunk(
 
 export const addContact = createAsyncThunk(
   "contacts/addContact",
-  async (token, userData) => {
-    console.log(userData);
+  async ({ token, userData }) => {
     axios.defaults.headers.Authorization = `Bearer ${token}`;
     try {
       const { data } = await axios.post(`${apiURL}/contacts`, {
@@ -73,8 +72,7 @@ export const addContact = createAsyncThunk(
 
 export const deleteContact = createAsyncThunk(
   "contacts/deleteContact",
-  async (token, id) => {
-    console.log(id);
+  async ({ token, id }) => {
     axios.defaults.headers.Authorization = `Bearer ${token}`;
     await axios.delete(`${apiURL}/contacts/${id}`);
     try {

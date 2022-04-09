@@ -5,7 +5,6 @@ import styles from "./ContactsList.module.css";
 const ContactsList = () => {
   const filter = useSelector((state) => state.contacts.filter);
   const contacts = useSelector((state) => state.contacts);
-  console.log(contacts);
   const { contactsList, loading } = contacts;
 
   const filterContacts = (contactsToFilter) => {

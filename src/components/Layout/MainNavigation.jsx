@@ -30,6 +30,11 @@ const MainNavigation = () => {
               <Link to={"/login"}>Login</Link>
             </li>
           )}
+          {isLoggedIn && (
+            <li>
+              <Link to={"/contacts"}>Contacts</Link>
+            </li>
+          )}
           {isLoggedIn && <button onClick={logoutHandler}>Logout</button>}
         </ul>
       </nav>
