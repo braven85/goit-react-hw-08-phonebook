@@ -44,8 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://braven85.github.io/goit-react-hw-08-phonebook/",
-  "devDependencies": {
-    "netlify-cli": "^9.16.4"
-  }
+  "homepage": "https://braven85.github.io/goit-react-hw-08-phonebook/"
 }

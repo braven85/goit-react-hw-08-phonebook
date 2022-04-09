@@ -15,6 +15,12 @@ export const Repository = () => {
       >
         GitHub Pages
       </a>
+      <a
+        className={classes["repo-link"]}
+        href="https://incredible-basbousa-03ef45.netlify.app/"
+      >
+        Netlify
+      </a>
     </>
   );
 };
