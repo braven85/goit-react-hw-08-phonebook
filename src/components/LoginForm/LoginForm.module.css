@@ -1,5 +1,5 @@
 .container {
-  margin: 3rem auto;
+  margin: 8% auto;
   width: 95%;
   max-width: 35rem;
   border-radius: 6px;
@@ -12,7 +12,9 @@
 
 .container h1 {
   text-align: center;
+  font-size: xx-large;
   color: white;
+  margin-bottom: 3%;
 }
 
 .entry {
@@ -47,6 +49,8 @@
 .actions button {
   cursor: pointer;
   font: inherit;
+  font-size: large;
+  font-weight: 500;
   color: white;
   background-color: #9f5ccc;
   border: 1px solid #9f5ccc;

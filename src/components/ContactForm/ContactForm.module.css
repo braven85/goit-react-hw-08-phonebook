@@ -6,15 +6,16 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
   border: 2px solid #000000;
   padding: 10px;
   width: 50%;
-  background-color: #d7f6ff;
+  background-color: #38015c;
 }
 
 .FormInput__label {
   width: 100%;
+  color: #ffffff;
 }
 
 .FormInput__input {
@@ -27,7 +28,7 @@
 
 .FormInput__input:focus {
   outline: none;
-  box-shadow: 0 0 5px 5px #67aeff;
+  box-shadow: 0 0 5px 5px #ffffff;
   border: 1px solid #808080;
   border-radius: 5px;
 }
@@ -40,7 +41,7 @@
   color: #000000;
   background-color: #ffffff;
   padding: 3px 10px 3px 10px;
-  font-size: 15px;
+  font-size: large;
   font-weight: bold;
 }
 

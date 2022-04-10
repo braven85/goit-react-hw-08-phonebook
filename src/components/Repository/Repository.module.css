@@ -1,12 +1,21 @@
+.repo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
 .repo-link {
   text-decoration: none;
-  color: #000000;
-  font-size: 30px;
+  color: #38015c;
+  text-shadow: 0 0 8px #ffffff;
+  font-size: 40px;
   font-weight: bold;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .repo-link:hover {
-  color: #0000ff;
+  color: #ffffff;
+  text-shadow: 0 0 8px #38015c;
 }

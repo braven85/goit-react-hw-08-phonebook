@@ -2,7 +2,7 @@ import classes from "./Repository.module.css";
 
 export const Repository = () => {
   return (
-    <>
+    <section className={classes.repo}>
       <a
         className={classes["repo-link"]}
         href="https://github.com/braven85/goit-react-hw-08-phonebook"
@@ -21,6 +21,6 @@ export const Repository = () => {
       >
         Netlify
       </a>
-    </>
+    </section>
   );
 };
