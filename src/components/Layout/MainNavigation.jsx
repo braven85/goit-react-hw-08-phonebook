@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { logoutUser } from "../../services/api";
 import classes from "./MainNavigation.module.css";
 
@@ -15,24 +15,50 @@ const MainNavigation = () => {
 
   return (
     <header className={classes.header}>
-      <Link to="/">
-        <div className={classes.logo}>Home page</div>
-      </Link>
+      <NavLink
+        className={(navData) =>
+          navData.isActive ? `${classes.active}` : `${classes.logo}`
+        }
+        to="/"
+      >
+        Home page
+      </NavLink>
       <nav>
         <ul>
           {!isLoggedIn && (
             <li>
-              <Link to={"/register"}>Register</Link>
+              <NavLink
+                className={(navData) =>
+                  navData.isActive ? `${classes.active}` : `${classes.logo}`
+                }
+                to={"/register"}
+              >
+                Register
+              </NavLink>
             </li>
           )}
           {!isLoggedIn && (
             <li>
-              <Link to={"/login"}>Login</Link>
+              <NavLink
+                className={(navData) =>
+                  navData.isActive ? `${classes.active}` : `${classes.logo}`
+                }
+                to={"/login"}
+              >
+                Login
+              </NavLink>
             </li>
           )}
           {isLoggedIn && (
             <li>
-              <Link to={"/contacts"}>Contacts</Link>
+              <NavLink
+                className={(navData) =>
+                  navData.isActive ? `${classes.active}` : `${classes.logo}`
+                }
+                to={"/contacts"}
+              >
+                Contacts
+              </NavLink>
             </li>
           )}
           {isLoggedIn && <button onClick={logoutHandler}>Logout</button>}
